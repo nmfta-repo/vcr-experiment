@@ -42,7 +42,8 @@ ELEMENTS:
   - TYPE: Parent
     ROLE: Refines
 
-[FREETEXT]
+[TEXT]
+STATEMENT: >>>
 This document captures security requirements for vehicle network gateway devices: both devices intended to be gateways and those devices which *could be a gateway* (due to malicious code). There will be devices which are connected to multiple vehicle networks but not all of them are intended to perform gatewaying functions. The design intent of the device dictactes what security requirements it must satisfy.
 
 These recommended security requirements are intended to be informative, not directional in nature. While all reasonable steps have been taken to ensure that the recommendations are well-supported by our research and third-party verification, NMFTA and the parties contributing to these recommendations do not accept liability or responsibility for any damage or harm incurred as a result of actions taken based upon these recommendations.
@@ -132,14 +133,15 @@ Note that (Intended) Gateways may optionally perform the following functions as 
 * These devices may provide diagnostic commands to users with necessary authentication and authorization
 
 Note on options for requirements: This document contains requirements where the working group cannot reasonably require a particular implementation option, only that one of the satisfactory ways to satisfy the requirement is implemented. Modelling these 'options' requirements is not possible nor reccomended: the sheer number of requirements which will be captured for heavy vehicles means that the requirements must remain machine readable and there is no machine readable way to communicate options to implementors (for good reason). The approach that is taken is to a) include the options as notes to the implementers of these requirements and b) to tag all requirements with `CONTAINS_OPTIONS` so the entire list of requirements containing notes to the implementers can be indexed for easy reference by them.
-[/FREETEXT]
+<<<
 
-[SECTION]
+[[SECTION]]
 TITLE: Security Requirements for Abstract (Intended) Gateways
 
-[FREETEXT]
+[TEXT]
+STATEMENT: >>>
 The following requirements must be satisfied by any device intended to be a gateway on *any type of* vehicle networks. There are CAN-specific and J1939-sepcific requirements in the CGW- and J1939GW- series below.
-[/FREETEXT]
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-000
@@ -449,12 +451,13 @@ AND
 Test to confirm that for each TND and UND, replaying the status indicated traffic by the tester does not cause the (gateway) device to then permit the preventions. Performed by repeating the tests of AGW-S-001 and AGW-S-005 while replaying.
 <<<
 
-[SECTION]
+[[SECTION]]
 TITLE: Security Requirements for CAN Gateways
 
-[FREETEXT]
+[TEXT]
+STATEMENT: >>>
 The following security requirements must be satisfied by CAN gateways specifically. These CAN gateways are expected to meet all of the AGW-S-* Abstract Gateway security requirements and to also satisfy the CGW-S-* security requirements of this section.
-[/FREETEXT]
+<<<
 
 [REQUIREMENT]
 UID: CGW-S-001
@@ -471,12 +474,13 @@ RELATIONS:
   VALUE: AGW-S-009
   ROLE: Refines
 
-[SECTION]
+[[SECTION]]
 TITLE: Preserves Atomic Multicast: CGW-S-005* Series
 
-[FREETEXT]
+[TEXT]
+STATEMENT: >>>
 The device SHALL preserve the atomic multicast property of CAN buses. All CGW-S-005* requirements must be satisfied.
-[/FREETEXT]
+<<<
 
 [REQUIREMENT]
 UID: CGW-S-005a
@@ -707,9 +711,9 @@ RELATIONS:
   VALUE: AGW-S-007
   ROLE: Refines
 
-[/SECTION]
+[[/SECTION]]
 
-[SECTION]
+[[SECTION]]
 TITLE: Prevents CAN Attacks
 
 [REQUIREMENT]
@@ -748,17 +752,18 @@ RELATIONS:
   VALUE: AGW-S-003
   ROLE: Refines
 
-[SECTION]
+[[SECTION]]
 TITLE: Prevents CAN Protocol Attacks: CGW-S-008* Series
 
-[FREETEXT]
+[TEXT]
+STATEMENT: >>>
 The CAN gateways must prevent CAN protocol attacks in *TND*. At the time of drafting these requirements this can be accomplished by satisfying all of the CGW-S-008* requirements that follow.
 
 CAN Protocol Attack
     Attacks on CAN networks requiring GPIO control of CAN_TX (and optionally CAN_RX) pins.
 
 c.f. https://canislabs.com/downloads/2020-02-14-White-Paper-CAN-Security.pdf section 2.1 for further definition of CAN protocol attacks.
-[/FREETEXT]
+<<<
 
 [REQUIREMENT]
 UID: CGW-S-008a
@@ -860,7 +865,7 @@ RELATIONS:
   VALUE: AGW-S-002
   ROLE: Refines
 
-[/SECTION]
+[[/SECTION]]
 
 [REQUIREMENT]
 UID: CGW-S-013
@@ -883,16 +888,17 @@ RELATIONS:
   VALUE: AGW-S-008
   ROLE: Refines
 
-[/SECTION]
+[[/SECTION]]
 
-[/SECTION]
+[[/SECTION]]
 
-[SECTION]
+[[SECTION]]
 TITLE: Security Requirements for J1939 Gateways
 
-[FREETEXT]
+[TEXT]
+STATEMENT: >>>
 J1939 Gateways are expected to meet all of the CGW-S-* CAN Gateway Security Requirements and to also satisfy the J1939GW-S-* security requirements of this section.
-[/FREETEXT]
+<<<
 
 [REQUIREMENT]
 UID: J1939GW-S-039
@@ -940,16 +946,17 @@ RELATIONS:
   VALUE: AGW-S-008
   ROLE: Refines
 
-[/SECTION]
+[[/SECTION]]
 
-[/SECTION]
+[[/SECTION]]
 
-[SECTION]
+[[SECTION]]
 TITLE: Security Requirements for Abstract Unintended Gateways
 
-[FREETEXT]
+[TEXT]
+STATEMENT: >>>
 Security requirements that must be satisfied by any device which *could be* a gateway (due to malicious code) but is not intended to be one.
-[/FREETEXT]
+<<<
 
 [REQUIREMENT]
 UID: NGW-S-001
@@ -970,7 +977,7 @@ PUB_REFS: >>>
     -- SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, g.
 <<<
 
-[SECTION]
+[[SECTION]]
 TITLE: Prevents Gateway Functions
 
 [REQUIREMENT]
@@ -997,6 +1004,6 @@ CRITICALITY: High
 TITLE: Won't Encapsulate
 STATEMENT: These devices SHALL NOT encapsulate information as it is transported and/or translated between the network domains.
 
-[/SECTION]
+[[/SECTION]]
 
-[/SECTION]
+[[/SECTION]]

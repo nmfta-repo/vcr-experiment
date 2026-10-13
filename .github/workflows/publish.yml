@@ -22,12 +22,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.8
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
@@ -51,19 +51,19 @@ jobs:
           bash -x topaper.sh
 
       - name: Upload html
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: html-pages
           path: docs/html/
 
       - name: Upload reqif
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: reqif-export
           path: docs/html/vcr-experiment.reqif
 
       - name: Upload pdf (paper)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: the_paper
           path: paper/build/latex/hdvcrsgw.pdf
