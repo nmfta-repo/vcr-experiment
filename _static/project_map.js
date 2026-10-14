@@ -7,7 +7,7 @@ window.StrictDoc.project.map = {
 
   {"_LINK":"None-NMFTA-Telematics-Security-Requirements-Matrix" },
 
-  {"_LINK":"f6943aa2875a47ceb84b43ddad019b5d" },
+  {"_LINK":"c86482231a7f4c65b017d1b22c33852e" },
 
   {"UID":"AA-010","_LINK":"AA-010" },
 
@@ -635,11 +635,11 @@ window.StrictDoc.project.map = {
 
   {"_LINK":"None-Vehicle-Network-Gateway-Devices-Security-Requirements" },
 
-  {"_LINK":"001bbb92e5f340c5ac056bcb28372fc3" },
+  {"_LINK":"56c8f128a852494a859672487915d0da" },
 
   {"_LINK":"1-Security-Requirements-for-Abstract-Intended-Gateways" },
 
-  {"_LINK":"a71c93acedd24a71b44a63f1d898af7d" },
+  {"_LINK":"a0ecf303cf9949aab2d49f9104fd1a0f" },
 
   {"UID":"AGW-S-000","_LINK":"AGW-S-000" },
 
@@ -667,13 +667,13 @@ window.StrictDoc.project.map = {
 
   {"_LINK":"1.13-Security-Requirements-for-CAN-Gateways" },
 
-  {"_LINK":"84dbfc2ee1af4f29bab7f35cb73310fd" },
+  {"_LINK":"2d3b57cf1dbc4a0789a75adb48ed97ee" },
 
   {"UID":"CGW-S-001","_LINK":"CGW-S-001" },
 
   {"_LINK":"1.13.2-Preserves-Atomic-Multicast-CGW-S-005-Series" },
 
-  {"_LINK":"72a1bce99d4d4d20809f14646216c0cb" },
+  {"_LINK":"42ea8a3e434f41cdb975396b4b3bf42f" },
 
   {"UID":"CGW-S-005a","_LINK":"CGW-S-005a" },
 
@@ -693,7 +693,7 @@ window.StrictDoc.project.map = {
 
   {"_LINK":"1.13.3.3-Prevents-CAN-Protocol-Attacks-CGW-S-008-Series" },
 
-  {"_LINK":"849428f671c1453886bd7e0336408121" },
+  {"_LINK":"9f9595e109e74c8995a9c14f5dbcc85f" },
 
   {"UID":"CGW-S-008a","_LINK":"CGW-S-008a" },
 
@@ -709,7 +709,7 @@ window.StrictDoc.project.map = {
 
   {"_LINK":"1.14-Security-Requirements-for-J1939-Gateways" },
 
-  {"_LINK":"13be5eeda6844b7f80440e3f29a09716" },
+  {"_LINK":"de512fb462de4f60a09c30f304f15544" },
 
   {"UID":"J1939GW-S-039","_LINK":"J1939GW-S-039" },
 
@@ -719,7 +719,7 @@ window.StrictDoc.project.map = {
 
   {"_LINK":"2-Security-Requirements-for-Abstract-Unintended-Gateways" },
 
-  {"_LINK":"aa80de19a3ff43a1a801497dfb544cb2" },
+  {"_LINK":"6c39d734aeb14793be04647c2540c6a0" },
 
   {"UID":"NGW-S-001","_LINK":"NGW-S-001" },
 
